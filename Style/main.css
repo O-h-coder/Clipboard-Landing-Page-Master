@@ -1,0 +1,37 @@
+* {
+  font-family: "Bai Jamjuree", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Start Components */
+.start-header {
+  color: hsl(210, 10%, 33%);
+  margin-bottom: 40px;
+  text-align: center;
+}
+.start-header h1 {
+  margin-bottom: 20px;
+}
+.start-header p {
+  line-height: 1.6;
+}
+/* End Components */
+/* Start Main Container */
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* Smail Mobile */
+@media (max-width: 480px) {
+  .container {
+    width: 450px;
+  }
+}
+/* Large */
+@media (min-width: 481px) {
+  .container {
+    width: 650px;
+  }
+}
+/* End main Container */
