@@ -19,6 +19,7 @@
 }
 .start-header p {
   line-height: 1.6;
+  opacity: 0.6;
 }
 /* End Components */
 /* Start Main Container */
@@ -46,7 +47,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 .welcome .s-l {
   margin-bottom: 50px;
@@ -84,8 +85,7 @@
 /* Start Section-one */
 .section-one .content {
   display: flex;
-  gap: 120px;
-  padding-top: calc(100px - 40px);
+  gap: 50px;
   margin-bottom: 100px;
 }
 .section-one .content img {
@@ -120,6 +120,12 @@
   }
   .section-one .content ul li {
     text-align: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .section-one ul li h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
   }
 }
 /* End Section-one */
@@ -129,7 +135,6 @@
   flex-direction: column;
   align-items: center;
   padding-top: calc(100px - 40px);
-  margin-bottom: 100px;
 }
 .section-two img {
   width: 70%;
@@ -143,3 +148,66 @@
   }
 }
 /* End Section-two */
+/* Start Section-Three */
+.section-three {
+  margin: 150px 0 100px;
+}
+.section-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-three .part-one {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  text-align: center;
+  margin: 30px auto 220px;
+  gap: 20px;
+  align-items: baseline;
+}
+.section-three .part-one li img {
+  margin: 0 0 38px;
+}
+.section-three .part-one li h2 {
+  font-size: 22px;
+  margin-bottom: 28px;
+}
+.section-three .part-one li p {
+  line-height: 1.8;
+  opacity: 0.6;
+}
+.part-two {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  .section-three {
+    width: 100vh;
+  }
+  .section-three .part-one {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 100px;
+  }
+  .section-three .part-one li {
+    width: 350px;
+  }
+  .section-three .part-one li img {
+    width: 80px;
+  }
+  .section-three .part-one li h2 {
+    font-size: 36px;
+  }
+  .section-three .part-two {
+    flex-direction: column;
+    gap: 80px;
+    margin: 50px 0;
+  }
+}
+/* End Section-Three */
