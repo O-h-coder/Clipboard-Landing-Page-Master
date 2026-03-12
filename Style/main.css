@@ -5,9 +5,18 @@
   box-sizing: border-box;
   font-size: 18px;
 }
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --main-color-one: #26baa4;
+  --main-color-two: #6173ff;
+  --main-color-text-one: #4c545d;
+  --main-color-text-two: #9fabb2;
+}
 /* Start Components */
 .start-header {
-  color: #4c545d;
+  color: var(--main-color-text-one);
   margin-bottom: 40px;
   text-align: center;
   margin: 0 auto 50px;
@@ -20,6 +29,7 @@
 .start-header p {
   line-height: 1.6;
   opacity: 0.6;
+  color: var(--main-color-text-two);
 }
 /* End Components */
 /* Start Main Container */
@@ -46,7 +56,7 @@
   background-image: url("../images/bg-header-desktop.png");
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 100px;
+  padding-top: 120px;
   margin-bottom: 150px;
 }
 .welcome .s-l {
@@ -61,13 +71,13 @@
   border-bottom: 2px solid;
 }
 .welcome .download-links .IOS {
-  background-color: #26baa4;
-  box-shadow: 0 1px 5px 0 #26baa4;
+  background-color: var(--main-color-one);
+  box-shadow: 0 1px 5px 0 var(--main-color-one);
   border-color: #186e61;
 }
 .welcome .download-links .MAC {
-  background-color: #6173ff;
-  box-shadow: 0 1px 5px 0 #6173ff;
+  background-color: var(--main-color-two);
+  box-shadow: 0 1px 5px 0 var(--main-color-two);
   border-color: #4653b6;
 }
 @media (max-width: 480px) {
@@ -86,7 +96,7 @@
 .section-one .content {
   display: flex;
   gap: 50px;
-  margin-bottom: 100px;
+  margin: 100px 0;
 }
 .section-one .content img {
   transform: translateX(-30px);
@@ -97,15 +107,16 @@
 }
 .section-one ul li {
   padding: 20px;
-  color: #4c545d;
 }
 .section-one ul li h2 {
   font-size: 22px;
   margin-bottom: 20px;
+  color: var(--main-color-text-one);
 }
 .section-one ul li p {
   line-height: 1.6;
   opacity: 0.5;
+  color: var(--main-color-text-two);
 }
 @media (max-width: 480px) {
   .section-one {
@@ -137,6 +148,7 @@
   padding-top: calc(100px - 40px);
 }
 .section-two img {
+  margin-top: 100px;
   width: 70%;
 }
 @media (max-width: 480px) {
@@ -150,7 +162,7 @@
 /* End Section-two */
 /* Start Section-Three */
 .section-three {
-  margin: 150px 0 50px;
+  margin: 100px 0 50px;
 }
 .section-three {
   display: flex;
@@ -172,10 +184,12 @@
 .section-three .part-one li h2 {
   font-size: 22px;
   margin-bottom: 28px;
+  color: var(--main-color-text-one);
 }
 .section-three .part-one li p {
   line-height: 1.8;
   opacity: 0.6;
+  color: var(--main-color-text-two);
 }
 .part-two {
   list-style: none;
@@ -219,11 +233,11 @@
 /* Start Footer */
 .footer {
   display: flex;
-  padding: 20px;
-  background-color: #f0f1f2;
+  background-color: #f5f6f8;
   justify-content: space-evenly;
   align-items: center;
   padding: 50px;
+  margin-top: 200px;
 }
 .footer .logo {
   width: 58px;
@@ -240,7 +254,7 @@
 }
 .footer a {
   text-decoration: none;
-  color: #4c545d;
+  color: var(--main-color-text-one);
 }
 @media (max-width: 480px) {
   .footer {
@@ -258,7 +272,7 @@
 /* End Footer */
 /* Start Active Section */
 .footer a:hover {
-  color: #26baa4;
+  color: var(--main-color-one);
 }
 .welcome .download-links a:hover {
   opacity: 0.7;
