@@ -256,3 +256,11 @@
   }
 }
 /* End Footer */
+/* Start Active Section */
+.footer a:hover {
+  color: #26baa4;
+}
+.welcome .download-links a:hover {
+  opacity: 0.7;
+}
+/* End Active Section */
